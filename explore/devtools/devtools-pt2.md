@@ -1,0 +1,2 @@
+1. the bug is we take input num1 and num2 and view them as string, rather than numbers, so adding them together would be evaluated to concat of string, result is a string type. So the answer would be concating two numbers together as string rather than adding them, for example 1 + 2 would be 12 instead of 3.
+2. can fix by type casting num1 and num2 to number. Do this by adding Number(num1) and Number(num2) around. Then + would perform numeric addition as expected and return the correct value.
